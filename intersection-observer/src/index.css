@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+h1{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: wheat;
+  margin: 20px 0;
+
+}
+
+.photos {
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  animation: scale 0.5s linear;
+}
+
+@keyframes scale{
+  from{transform: scale(0.5);}
+}
+
+.photos img{
+  width: 100%;
+  display: block;
+  max-width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photos p{
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.photos span{
+  color: chocolate;
+  margin: 0 10px;
+
+}
+
+button{
+  padding: 5px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.loading img{
+  margin: 10px;
+  height: 50px;
+}
